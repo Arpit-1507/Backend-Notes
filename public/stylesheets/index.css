@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-darker: #000;
+    --base-lighter: #fbfbfb;
+    --base-light: #aaaaaa;
+}
+
+body {
+    background-color: var(--base-darker);
+    color: var(--base-lighter);
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    border: 0.5px solid transparent;
+    outline: none;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--base-lighter);
+    color: var(--base-darker);
+}
+
+.btn-primary:hover {
+    background-color: var(--base-darker);
+    color: var(--base-lighter);
+    border-color: var(--base-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar-header {
+    padding: 1rem 0;
+}
+
+.navbar-header_content {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-link-item {
+    font-size: 18px;
+    color: var(--base-light);
+}
+
+.navbar-link-item:hover {
+    color: var(--base-lighter);
+}
+
+/* Hero section */
+.hero-section {
+    padding: 2rem 0;
+}
+
+.hero-section_title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
+    text-align: center;
+    color: var(--base-light);
+    font-weight: 400;
+}
+
+.hero-section_title .quoted-text {
+    color: var(--base-lighter);
+}
+
+.hero-section_cards {
+    padding: 7rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.hero-section_card {
+    min-height: 450px;
+    border-radius: 12px;
+}
+
+.hero-section_card_content {
+    padding: 1.6rem;
+}
+
+.hero-section_card_title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1.6rem;
+}
+
+.hero-section_card.card-1 {
+    background: linear-gradient(to top, RGBA(0, 0, 0, 0.2), RGBA(0, 0, 0, 0.8)), url('https://img.freepik.com/free-photo/geometric-vintage-retro-background-ai-generated-image_511042-624.jpg?t=st=1716023167~exp=1716026767~hmac=4fef57bb9a0a07952db1ea795cbd17c7aea316508a4eae2038ab8f2efced6bea&w=1800');
+    background-position: left;
+}
+
+.hero-section_card.card-2 {
+    background: linear-gradient(to top, RGBA(0, 0, 0, 0.2), RGBA(0, 0, 0, 0.8)), url('https://img.freepik.com/premium-photo/man-solid-color-background-with-smile-facial-expression-ai-generated-artwork_781958-2551.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section_card.card-3 {
+    background: linear-gradient(to top, RGBA(0, 0, 0, 0.2), RGBA(0, 0, 0, 0.8)), url('https://img.freepik.com/free-photo/abstract-futuristic-background-with-3d-design_1361-3532.jpg?t=st=1716023184~exp=1716026784~hmac=1025df8aa1c270ac44093fa3d242c7d8231b910cd23fd2459ab6398293dee0c0&w=1380');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section_card.card-4 {
+    background: linear-gradient(to top, RGBA(0, 0, 0, 0.2), RGBA(0, 0, 0, 0.8)), url('https://img.freepik.com/free-vector/branch-with-leaves_1182-560.jpg?t=st=1716023240~exp=1716026840~hmac=7184a7b2faaf9023111c8d8a6be0e89222903b69054c26f93da2e70168fa70e9&w=900');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
